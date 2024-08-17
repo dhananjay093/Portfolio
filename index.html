@@ -4,69 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A basic portfolio website">
-    <title>My Portfolio</title>
+    <meta name="description" content="Dhananjay Sharma's Portfolio Website">
+    <title>Dhananjay Sharma's Portfolio</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #333;
+            background-color: #0a74da;
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
         }
 
         nav {
-            margin: 0;
-            padding: 0;
+            background-color: #094c8a;
             text-align: center;
-            background-color: #444;
+            padding: 0.75rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             color: #fff;
-            padding: 14px 20px;
-            display: inline-block;
+            padding: 10px 20px;
             text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #0a74da;
+            border-radius: 5px;
         }
 
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 20px 0;
         }
 
         #showcase {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            background: linear-gradient(rgba(10, 116, 218, 0.7), rgba(10, 116, 218, 0.7)), url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
             color: #fff;
             height: 400px;
             text-align: center;
             padding-top: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         #showcase h1 {
-            font-size: 55px;
+            font-size: 3rem;
             margin: 0;
         }
 
         #about, #projects, #contact {
-            padding: 20px 0;
+            padding: 40px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #094c8a;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #0a74da;
+            margin: 10px auto 0;
         }
 
         .project {
@@ -75,82 +106,4 @@
             justify-content: space-around;
         }
 
-        .project-item {
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px;
-            width: 30%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            .project-item {
-                width: 100%;
-            }
-
-            #showcase h1 {
-                font-size: 40px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="showcase">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my work and skills</p>
-    </section>
-
-    <div class="container">
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Hello! I'm a passionate web developer with experience in creating dynamic and responsive websites. I enjoy coding and constantly learning new technologies to improve my skills.</p>
-        </section>
-
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="project">
-                <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>A description of your first project. Highlight the features, technologies used, and the problem it solves.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Project 2</h3>
-                    <p>A description of your second project. Explain how you approached the problem and the solution you implemented.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Project 3</h3>
-                    <p>A description of your third project. Focus on the unique aspects of this project and the challenges you overcame.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2 class="section-title">Contact Me</h2>
-            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>
-</body>
-
-</html>
+        .project-item
