@@ -106,4 +106,127 @@
             justify-content: space-around;
         }
 
-        .project-item
+        .project-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #0a74da;
+        }
+
+        .project-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .project-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0a74da;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-item a:hover {
+            background-color: #094c8a;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a74da;
+            color: #fff;
+            margin-top: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            #showcase h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dhananjay Sharma</h1>
+        <p>B.Tech in Computer Science Engineering</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="showcase">
+        <h1>Welcome to My Portfolio</h1>
+        <p>AI Researcher and Machine Learning Engineer</p>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Dhananjay Sharma, a passionate AI Researcher and Machine Learning Engineer currently pursuing a B.Tech in Computer Science Engineering from Bhagwan Parshuram Institute of Technology (G.G.S.I.P.U), Delhi. With a strong foundation in programming and AI/ML, I have experience in deploying real-time systems on edge devices and optimizing models for efficient performance.</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <div class="project-item">
+                    <h3>CropDoc</h3>
+                    <p>A mobile application that enables users to upload images of infected crops for accurate disease identification and treatment recommendations. Built with Flutter, TensorFlow, and Keras.</p>
+                    <a href="https://github.com/dhananjay093/Crop_Disease_Predictor" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Move Predictor</h3>
+                    <p>A machine learning model designed to forecast upward trends within the S&P 500 Index using time series data and the random forest algorithm.</p>
+                    <a href="https://github.com/dhananjay093/S-P-500-index-movement-predictor" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-item">
+                    <h3>Note Application</h3>
+                    <p>A note-taking app with CRUD functionalities for text notes, utilizing Flutter and Firebase for user authentication and storage.</p>
+                    <a href="https://github.com/dhananjay093/noteapp" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p>You can reach me at <a href="mailto:dhananjaysharma2025@gmail.com">dhananjaysharma2025@gmail.com</a>.</p>
+            <p>Check out my work on <a href="https://github.com/dhananjay093" target="_blank">GitHub</a> or connect with me on <a href="https://www.linkedin.com/in/dhananjay-sharma-/" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dhananjay Sharma</p>
+    </footer>
+</body>
+
+</html>
